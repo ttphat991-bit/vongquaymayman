@@ -433,22 +433,18 @@ spinBtn.onclick = () => {
 			// rung kim đồng bộ
 			bouncePointer(0.12 + (1 - remain) * 0.25);
 			// 📳 rung theo tốc độ
-			if (remain > 0.6) {
+			
+		}
+		if (remain > 0.6) {
 				vibratePhone(10);          // quay nhanh → rung rất nhẹ
 			} else if (remain > 0.3) {
 				vibratePhone(20);          // chậm dần
 			} else {
 				vibratePhone([30, 20, 30]); // gần dừng
 			}
-		}
-		
 		
 		
 
-		
-		
-		
-		
 		
 
         if (p < 1) {
@@ -578,4 +574,5 @@ highlightLoop();
 
 </body>
 </html>
+
 
